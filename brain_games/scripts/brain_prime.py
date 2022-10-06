@@ -38,7 +38,9 @@ def main():
                 correct = 'no'
             print(f"{answer} is wrong answer ;(. Correct answer was {correct}.")
             print(f"Let's try again, {name}!")
-    print(f'Congratulations, {name}!')
+            break
+    if count == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
