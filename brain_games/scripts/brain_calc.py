@@ -30,7 +30,7 @@ def main():
         else:
             count = 0
             print(f"{answer} is wrong answer ;(. Correct answer was {correct}.")
-            print("Let's try again, Sam!")
+            print(f"Let's try again, {name}!")
             break
     if count == 3:
         print(f'Congratulations, {name}!')
