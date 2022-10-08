@@ -4,10 +4,7 @@ from random import randrange
 from brain_games.cli import welcome_user, name
 
 
-def main():
-    welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
+def is_count():
     count = 0
     while count < 3:
         number = randrange(100)
@@ -31,7 +28,14 @@ def main():
             print(f"{answer} is wrong answer ;(. Correct answer was {correct}.")
             print(f"Let's try again, {name}!")
             break
-    if count == 3:
+    return count
+
+
+def main():
+    welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+    if is_count() == 3:
         print(f'Congratulations, {name}!')
 
 
